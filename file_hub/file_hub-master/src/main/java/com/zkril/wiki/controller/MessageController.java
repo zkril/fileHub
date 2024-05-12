@@ -57,7 +57,7 @@ public class MessageController {
     @PostMapping(value="/add")
     public Result addMessage(@RequestParam Map<String,Object> message) throws ParseException {
         System.out.println(message);
-        if(message.get("message_name")==null ||message.get("message_id")==null||message.get("courseid")==null)
+        if(message.get("message_name")==null ||message.get("accountid")==null||message.get("courseid")==null)
             return Result.fail("缺少必要的字段");
         Message message1=new Message();
         message1.setMessageBody(message.get("message_body").toString());
