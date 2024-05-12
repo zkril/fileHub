@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zkril.wiki.mapper.CourseMapper">
+
+    <resultMap id="BaseResultMap" type="com.zkril.wiki.pojo.Course">
+            <id property="courseid" column="courseid" jdbcType="OTHER"/>
+            <result property="courseName" column="course_name" jdbcType="VARCHAR"/>
+            <result property="associatePerson" column="associate_person" jdbcType="VARCHAR"/>
+            <result property="accountid" column="accountid" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        courseid,course_name,associate_person,
+        accountid
+    </sql>
+</mapper>

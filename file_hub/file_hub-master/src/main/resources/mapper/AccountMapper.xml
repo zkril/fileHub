@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zkril.wiki.mapper.AccountMapper">
+
+    <resultMap id="BaseResultMap" type="com.zkril.wiki.pojo.Account">
+            <id property="countid" column="countid" jdbcType="OTHER"/>
+            <result property="uid" column="uid" jdbcType="VARCHAR"/>
+            <result property="uname" column="uname" jdbcType="VARCHAR"/>
+            <result property="accountPassword" column="account_password" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        countid,uid,uname,
+        account_password
+    </sql>
+</mapper>

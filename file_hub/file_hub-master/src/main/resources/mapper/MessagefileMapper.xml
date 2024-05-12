@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zkril.wiki.mapper.MessagefileMapper">
+
+    <resultMap id="BaseResultMap" type="com.zkril.wiki.pojo.Messagefile">
+            <id property="fileid" column="fileid" jdbcType="INTEGER"/>
+            <result property="messageid" column="messageid" jdbcType="INTEGER"/>
+            <result property="oldname" column="oldname" jdbcType="VARCHAR"/>
+            <result property="newname" column="newname" jdbcType="VARCHAR"/>
+            <result property="filesize" column="filesize" jdbcType="INTEGER"/>
+            <result property="path" column="path" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        fileid,messageid,oldname,
+        newname,filesize,path
+    </sql>
+</mapper>

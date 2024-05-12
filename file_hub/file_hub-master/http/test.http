@@ -1,0 +1,23 @@
+GET http://localhost:8086/home/message/search?uname=魏忠强&coursename=
+Accept: application/json
+
+###
+
+POST http://localhost:8086/login?uname=姚单铭&password=1234
+
+
+###
+GET http://localhost:8086/course/search?countid=1
+Accept: application/json
+
+
+###
+POST http://localhost:8086/course/add?courseName=kk&accountId=1
+
+###
+DELETE http://localhost:8086/course/delete?courseId=9
+
+
+###
+GET http://localhost:8086/home/course/search?uname=姚单铭
+Accept: application/json

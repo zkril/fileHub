@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zkril.wiki.mapper.MessageMapper">
+
+    <resultMap id="BaseResultMap" type="com.zkril.wiki.pojo.Message">
+            <id property="messageid" column="messageid" jdbcType="OTHER"/>
+            <result property="mid" column="mid" jdbcType="VARCHAR"/>
+            <result property="messageName" column="message_name" jdbcType="VARCHAR"/>
+            <result property="messageBody" column="message_body" jdbcType="VARCHAR"/>
+            <result property="accountid" column="accountid" jdbcType="INTEGER"/>
+            <result property="courseid" column="courseid" jdbcType="INTEGER"/>
+            <result property="ddl" column="ddl" jdbcType="TIME"/>
+            <result property="saveAddress" column="save_address" jdbcType="VARCHAR"/>
+            <result property="isfront" column="isfront" jdbcType="INTEGER"/>
+            <result property="submission" column="submission" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        messageid,mid,message_name,
+        message_body,accountid,courseid,
+        ddl,save_address,isfront,
+        submission
+    </sql>
+</mapper>
